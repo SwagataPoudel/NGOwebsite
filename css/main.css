@@ -1,0 +1,212 @@
+
+.navbar-brand img.logo {
+    width: 160px !important;
+    height: 150px !important;
+    display: block;
+    max-height: none !important;
+    margin-top: -20px !important;
+}
+
+@media (min-width: 1200px) {
+    .navbar-brand img.logo {
+        width: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img.logo {
+        width: 110px;
+    }
+}
+.navbar-brand img.logo {
+  height: 190px !important;   
+  width: auto !important;     
+  object-fit: contain;        
+  margin-top: -20px !important; 
+  margin-bottom: -20px !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: #1a1c6e !important;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #1a1c6e !important; /* red active link */
+}
+
+.btn-danger {
+  background-color:#a70d0b;
+  border: none;
+}
+
+.contact-info small {
+  font-size: 13px;
+  color: #1a1c6e;
+}
+
+.contact-info strong {
+  font-size: 14px;
+  color: #1a1c6e;
+}
+/* Header base style */
+#main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.4s ease;
+}
+
+/* Navbar transparent by default */
+#main-header .navbar {
+  background: transparent !important;
+  transition: background 0.4s ease, padding 0.4s ease;
+  padding: 25px 0; /* make header taller */
+}
+
+#main-header.sticky .navbar {
+  background: #ffffff !important; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 15px 0;
+}
+
+#main-header.sticky .navbar .nav-link {
+  color: #136da7 !important;
+}
+
+#main-header.sticky .navbar .text-muted {
+  color: #0a4f7f  !important;
+}
+
+#main-header.sticky .navbar .nav-link:hover {
+  color: #0a4f7f !important;
+}
+
+.navbar-brand img.logo {
+  height: 190px !important; 
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+#main-header.sticky .navbar-brand img.logo {
+  height: 100px !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: #0d1b2a !important;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0d1b2a  !important;
+}
+.topbar {
+  font-size: 14px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: justify;
+}
+.text-muted {
+  color: #fff !important; 
+}
+.topbar i {
+  font-size: 14px;
+}
+
+.topbar .social-icons a {
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.topbar .social-icons a:hover {
+  color: #dc3545;
+}
+
+.navbar-nav .nav-link {
+  color: #333 !important; 
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #dc3545 !important; 
+}
+
+/* Active (current) page link */
+.navbar-nav .nav-link.active {
+  color: #ffffff !important; /* Blue active color */
+  font-weight: 600;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+/* ===== Navbar Menu Color Style ===== */
+.navbar-nav .nav-link,
+.navbar-nav .dropdown-toggle {
+  color: #ffffff !important;  /* White menu text */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover,
+.navbar-nav .dropdown-toggle:hover {
+  color: #007bff !important; /* Blue hover */
+}
+
+/* Active (current) page */
+.navbar-nav .nav-link.active {
+  color: #ffffff !important; /* Blue for active page */
+  font-weight: 600;
+}
+
+/* ===== Dropdown Menu Colors ===== */
+.dropdown-menu {
+  background-color: #ffffff; /* White background for dropdown */
+  border: 1px solid #ddd;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #333 !important; /* Normal dropdown text */
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #007bff !important; /* Blue hover text in dropdown */
+  background-color: #f8f9fa; /* Light hover background */
+}
+.text-danger {
+    color: #ffffff !important;
+}
+
+#main-header.sticky .navbar .text-muted {
+    color: #136da7 !important
+}
+
+
+#main-header.sticky .navbar .text-danger {
+    color: #136da7 !important;
+}
+
+
+.container {
+        max-width: 13200px !important;
+    }
+
+.logo {
+      
+      filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+
+}
+
+.navbar-light {
+  border-bottom: none !important;
+}
