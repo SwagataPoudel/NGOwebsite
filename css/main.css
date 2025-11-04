@@ -417,7 +417,7 @@
   display: inline-block;
   margin-top: 35px;
   padding: 12px 35px;
-  background: #ff4444;
+  background: #1f2053; 
   color: #fff;
   border-radius: 30px;
   font-weight: 600;
@@ -687,4 +687,12 @@
 .program-content p {
   font-size: 0.95rem;
   color: #6c757d;
+}
+
+.service-item {
+  background-color: #1a1c6e; 
+  
+}
+a.text-dark {
+  color: white !important;
 }
