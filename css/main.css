@@ -75,15 +75,15 @@
 }
 
 #main-header.sticky .navbar .nav-link {
-  color: #136da7 !important;
+  color: #1a1c6e !important;
 }
 
 #main-header.sticky .navbar .text-muted {
-  color: #0a4f7f  !important;
+  color: #1a1c6e  !important;
 }
 
 #main-header.sticky .navbar .nav-link:hover {
-  color: #0a4f7f !important;
+  color: #1a1c6e !important;
 }
 
 .navbar-brand img.logo {
@@ -159,7 +159,7 @@
 /* Hover effect */
 .navbar-nav .nav-link:hover,
 .navbar-nav .dropdown-toggle:hover {
-  color: #007bff !important; /* Blue hover */
+  color: #1a1c6e !important; /* Blue hover */
 }
 
 /* Active (current) page */
@@ -180,7 +180,7 @@
 }
 
 .dropdown-menu .dropdown-item:hover {
-  color: #007bff !important; /* Blue hover text in dropdown */
+  color: #1a1c6e !important; /* Blue hover text in dropdown */
   background-color: #f8f9fa; /* Light hover background */
 }
 .text-danger {
@@ -188,12 +188,12 @@
 }
 
 #main-header.sticky .navbar .text-muted {
-    color: #136da7 !important
+    color: #1a1c6e !important
 }
 
 
 #main-header.sticky .navbar .text-danger {
-    color: #136da7 !important;
+    color: #1a1c6e !important;
 }
 
 
@@ -417,7 +417,7 @@
   display: inline-block;
   margin-top: 35px;
   padding: 12px 35px;
-  background: #1f2053; 
+  background: #1a1c6e;
   color: #fff;
   border-radius: 30px;
   font-weight: 600;
@@ -642,7 +642,7 @@
   transition: all 0.3s ease;
   overflow: hidden;
   border-radius: 15px;
-  background-color: rgba(25, 64, 154, 0.9) !important;
+  background-color:  #1a1c6e !important;
 }
 
 .program-item:hover {
@@ -696,3 +696,46 @@
 a.text-dark {
   color: white !important;
 }
+
+.navbar-light .navbar-nav .nav-item::before {
+      background-color: #a70d0b !important;
+    }
+    .navbar-light .navbar-nav .nav-item::after {
+     border-color: transparent transparent #a70d0b transparent !important;
+    }
+.service-btn{
+  background: #a70d0b !important;
+}
+.footer {
+    background: #1a1c6e !important; 
+}
+.service-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 500px; /* consistent image height */
+  margin: 0 auto;
+}
+
+.service-image {
+  width: 100%;
+  height: 60%;
+  border-radius: 20px;
+  object-fit: fill; /* fills container, no cropping or gaps */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  margin-top: 100px;
+}
+
+.service-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.2);
+}
+
+
+.contact-info i {
+  background-color: #ffffff; /* light blue background circle */
+  padding: 10px;
+  border-radius: 50%;
+  color: #1a1c6e  !important; /* blue color */
+}
+
