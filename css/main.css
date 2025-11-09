@@ -392,7 +392,7 @@
 }
 
 .icon i {
-  font-size: 32px;
+  font-size: 45px;
   color: #ff4444;
   transition: all 0.3s ease;
 }
@@ -739,3 +739,281 @@ a.text-dark {
   color: #1a1c6e  !important; /* blue color */
 }
 
+.btn-11 {
+  background-color: #1a1c6e !important;
+  color: white !important;
+  
+  border: 2px solid #1a1c6e;
+  padding: 8px 16px;
+  border-radius: 22px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s ease;
+}
+
+
+.roundeds {
+    border-radius: 2000px !important;
+}
+
+/* === WOW About Section === */
+.about-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 120px 0;
+  background: linear-gradient(rgba(10, 30, 100, 0.85), rgba(10, 30, 100, 0.85)),
+              url('../img/aboutus.jpg') center/cover fixed no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.about-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at top left, rgba(167,13,11,0.3), transparent 60%);
+  mix-blend-mode: screen;
+  z-index: 1;
+}
+
+.about-container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px 25px;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255,255,255,0.05);
+}
+
+.about-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 30px rgba(255,255,255,0.15);
+}
+
+.about-icon {
+  font-size: 45px;
+  color: #a70d0b;
+  margin-bottom: 15px;
+  animation: pulse-glow 2s infinite;
+}
+
+.about-card h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: #dce3f0;
+}
+
+.about-btn-glow {
+  display: inline-block;
+  padding: 14px 40px;
+  background: linear-gradient(45deg, #a70d0b, #a70d0b);
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.4);
+}
+
+.about-btn-glow:hover {
+  box-shadow: 0 0 25px rgba(255, 77, 77, 0.8);
+  transform: translateY(-3px);
+}
+
+/* Icon soft glow animation */
+@keyframes pulse-glow {
+  0%, 100% { text-shadow: 0 0 5px #a70d0b, 0 0 10px #ff4444; }
+  50% { text-shadow: 0 0 20px #ff9999, 0 0 30px #a70d0b; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 80px 0;
+    background-attachment: scroll;
+  }
+  .about-card {
+    padding: 25px 20px;
+  }
+  .about-card h5 {
+    font-size: 1.1rem;
+  }
+}
+
+/* === WOW Donate Section === */
+.donate-wow-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 120px 0;
+  color: #fff;
+  background: linear-gradient(#1a1c6e),
+              url('../img/children.jpg') center/cover fixed no-repeat;
+  overflow: hidden;
+}
+
+.donate-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255,255,255,0.2), transparent 70%);
+  mix-blend-mode: overlay;
+  z-index: 1;
+  animation: gradientFloat 12s infinite alternate ease-in-out;
+}
+
+@keyframes gradientFloat {
+  from { background-position: 0 0; }
+  to { background-position: 100% 100%; }
+}
+
+.donate-subtitle {
+  text-transform: uppercase;
+  color: #ffb3b3;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.donate-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.donate-desc {
+  font-size: 1.1rem;
+  max-width: 750px;
+  margin: 0 auto;
+  color: #eaeaea;
+}
+
+/* Image */
+.donate-image-box {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: transform 0.5s ease;
+}
+
+.donate-image-box:hover {
+  transform: scale(1.03);
+}
+
+.donate-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.donate-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.donate-image-box:hover .donate-glow {
+  opacity: 1;
+}
+
+/* Card */
+.donate-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 25px;
+  padding: 130px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, background 0.4s ease;
+}
+
+.donate-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.15);
+}
+
+.donate-card h3 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.donate-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.donate-list li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.donate-list li i {
+  color: white;
+  font-size: 1.3rem;
+  animation: pulseIcon 2s infinite;
+}
+
+@keyframes pulseIcon {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+.donate-text {
+  color: #e0e0e0;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Button */
+.donate-btn-wow {
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #a70d0b, #a70d0b);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  box-shadow: 0 0 20px rgba(255, 77, 77, 0.5);
+  transition: all 0.3s ease;
+}
+
+.donate-btn-wow:hover {
+  box-shadow: 0 0 35px rgba(255, 120, 120, 0.9);
+  transform: translateY(-3px);
+  background: linear-gradient(45deg, #ff6666, #a70d0b);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .donate-title {
+    font-size: 2rem;
+  }
+  .donate-card {
+    padding: 25px 20px;
+  }
+}
